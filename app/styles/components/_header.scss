@@ -1,0 +1,18 @@
+.header {
+  max-width: $container-max-width;
+  margin: auto;
+  padding: $spacing-root $spacing-root 0;
+
+  &__title {
+    margin: 0;
+    position: relative;
+    left: -.1em;
+
+    &::after {
+      content: '\2665';
+      font-size: .25em;
+      color: $color-red;
+
+    }
+  }
+}
