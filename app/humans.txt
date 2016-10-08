@@ -3,12 +3,12 @@
 
 # TEAM
 
-  <name> -- <role> -- <twitter>
+  Gavyn McKenzie -- Design & Development -- @gavynmckenzie
 
 # THANKS
 
-  <name>
+  Eloise Scotchbrook - for marrying me
 
 # TECHNOLOGY COLOPHON
 
-  HTML5, CSS3
+  HTML5, CSS3, Javascript
