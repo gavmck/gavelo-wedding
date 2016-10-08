@@ -1,0 +1,15 @@
+.location {
+  &__address {
+    span {
+      display: block;
+
+      &::after {
+        content: ',';
+      }
+
+      &:last-child::after {
+        content: '';
+      }
+    }
+  }
+}

@@ -1,12 +1,10 @@
 .header {
-  max-width: $container-max-width;
-  margin: auto;
-  padding: $spacing-root $spacing-root 0;
+  margin: $spacing-root 0;
 
   &__title {
     margin: 0;
     position: relative;
-    left: -.1em;
+    left: -.05em;
 
     &::after {
       content: '\2665';

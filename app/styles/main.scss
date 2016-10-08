@@ -1,9 +1,5 @@
 @import 'variables';
 
-@import 'base/typography';
+@import 'base/**/*';
 
-@import 'components/header',
-'components/footer',
-'components/main',
-'components/map',
-'components/btn';
+@import 'components/**/*';
