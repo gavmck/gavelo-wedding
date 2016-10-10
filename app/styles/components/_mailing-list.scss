@@ -1,0 +1,24 @@
+.mailing-list {
+  overflow: hidden;
+
+  &__row {
+    margin-bottom: $spacing;
+  }
+
+  &__label {
+
+  }
+
+  &__field {
+    border: .2em solid $color-grey-dark;
+    border-radius: $border-radius;
+    display: block;
+    font-size: inherit;
+    padding: $spacing-sm;
+    width: 100%;
+  }
+
+  &__btn {
+    float: right;
+  }
+}

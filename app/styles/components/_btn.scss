@@ -1,10 +1,13 @@
 .btn {
-  text-decoration: none;
-  color: $color-white;
   background: $color-red;
-  display: inline-block;
-  padding: $spacing;
+  border: 0;
   border-radius: $border-radius;
+  color: $color-white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: inherit;
+  padding: $spacing-sm $spacing;
+  text-decoration: none;
 
   &:hover {
     background: darken($color-red, 5%);
