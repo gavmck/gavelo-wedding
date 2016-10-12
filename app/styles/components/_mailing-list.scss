@@ -1,21 +1,33 @@
 .mailing-list {
-  overflow: hidden;
+  @include clearfix;
+  margin: auto;
+  max-width: $container-max-width;
+
+  &__title {
+    margin-top: 0;
+  }
 
   &__row {
     margin-bottom: $spacing;
   }
 
   &__label {
-
+    display: none;
   }
 
   &__field {
-    border: .2em solid $color-grey-dark;
+    border: .1em solid $color-grey;
     border-radius: $border-radius;
     display: block;
     font-size: inherit;
     padding: $spacing-sm;
+    transition: border $transition-duration $transition-easing;
     width: 100%;
+
+    &:focus {
+      border-color: $color-blue;
+      outline: none;
+    }
   }
 
   &__btn {

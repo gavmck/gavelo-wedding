@@ -2,7 +2,7 @@ const config = {
   paths: {
     html: 'app/**/*.html',
     sass: 'app/styles/**/*.scss',
-    googleFont: 'https://fonts.googleapis.com/css?family=Fauna+One|Playfair+Display',
+    icons: 'app/icons/**/*',
     dist: 'dist/'
   },
   dest: {

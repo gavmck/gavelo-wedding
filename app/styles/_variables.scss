@@ -1,8 +1,16 @@
 // Palette
+$color-blue: #14558d;
+$color-orange: #ee5a30;
+$color-yellow-light: #fef7d3;
+
 $color-red: #ff6666;
 $color-grey-darkest: #333;
 $color-grey-dark: #666;
+$color-grey: #ccc;
+
 $color-white: #fff;
+
+$color-darken: rgba(0, 0, 0, 0.25);
 
 // Fonts
 
@@ -18,12 +26,17 @@ $spacing-root: 5vw;
 
 $spacing: 1em;
 $spacing-sm: $spacing / 2;
-$spacing-lg: $spacing * 2;
+$spacing-lg: $spacing * 1.5;
 
 // Container
 
-$container-max-width: 25em;
+$container-max-width: 20em;
 
 // Border radius
 
 $border-radius: .25em;
+
+// Transitions
+
+$transition-duration: .2s;
+$transition-easing: ease-in-out;

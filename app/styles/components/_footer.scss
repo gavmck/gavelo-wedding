@@ -1,8 +1,9 @@
 .footer {
+  clear: both;
   margin: $spacing-root 0;
   text-align: center;
 
   &__heart {
-    color: $color-red;
+    color: $color-orange;
   }
 }

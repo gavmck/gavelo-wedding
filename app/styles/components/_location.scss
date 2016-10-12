@@ -1,4 +1,7 @@
 .location {
+  margin: auto;
+  max-width: $container-max-width;
+
   &__address {
     span {
       display: block;

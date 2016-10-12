@@ -1,16 +1,24 @@
 .header {
-  margin: $spacing-root 0;
+  background: $color-yellow-light;
+  box-shadow: 0 0 .25em 0 $color-darken;
+  color: $color-blue;
+  margin: 0 (-$spacing-root);
+  padding: $spacing-root;
+
+  &__inner {
+    margin: auto;
+    max-width: $container-max-width;
+  }
 
   &__title {
+    color: inherit;
+    left: -.05em;
     margin: 0;
     position: relative;
-    left: -.05em;
+  }
 
-    &::after {
-      content: '\2665';
-      font-size: .25em;
-      color: $color-red;
-
-    }
+  &__heart {
+    color: $color-orange;
+    font-size: .5em;
   }
 }

@@ -3,7 +3,8 @@ import './tasks/inline';
 import './tasks/sass';
 import './tasks/serve';
 import './tasks/watch';
+import './tasks/icons';
 
-gulp.task('default', ['inline', 'serve', 'watch']);
+gulp.task('default', ['inline', 'icons', 'serve', 'watch']);
 
-gulp.task('build', ['inline']);
+gulp.task('build', ['inline', 'icons']);

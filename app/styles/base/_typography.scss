@@ -7,12 +7,14 @@ html {
 }
 
 body {
+  color: $body-color;
   font-family: $font-family-body;
   font-size: 1.6rem;
+  -webkit-font-smoothing: antialiased;
   line-height: (30 / 16);
-  padding: 0 $spacing-root;
   margin: 0;
-  color: $body-color;
+  overflow-x: hidden;
+  padding: 0 $spacing-root;
 }
 
 h1,
@@ -21,16 +23,48 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $font-family-heading;
-  line-height: (68 / 70);
   color: $heading-color;
+  font-family: $font-family-heading;
+  font-weight: 900;
+  line-height: 1.2;
+  margin: $spacing-lg 0 $spacing-sm;
 }
 
 h1 {
   font-size: 6rem;
-  text-transform: uppercase;
+  font-weight: 400;
 }
 
 h2 {
-  margin: $spacing-lg 0 $spacing;
+  color: $color-orange;
+}
+
+p {
+  margin: 0 0 $spacing;
+}
+
+.js {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    opacity: 0;
+    transition: opacity $transition-duration $transition-easing;
+  }
+}
+
+.wf-active,
+.wf-inactive {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    opacity: 1;
+  }
 }
