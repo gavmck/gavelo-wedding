@@ -2,6 +2,12 @@
   margin: auto;
   max-width: $container-max-width;
 
+  &__link {
+    color: inherit;
+    display: block;
+    text-decoration: none;
+  }
+
   &__address {
     span {
       display: block;
