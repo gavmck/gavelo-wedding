@@ -1,0 +1,21 @@
+.polaroid {
+  background: linear-gradient(45deg, #fff, #efefef);
+  box-shadow: -.1em .1em .25em 0 rgba(0, 0, 0, 0.2);
+  margin: 0 auto $spacing * 2;
+  padding: $spacing $spacing $spacing * 2.5;
+  transform: rotate(-7deg);
+  width: 18em;
+
+  @media screen and (min-width: 40em) {
+    position: absolute;
+    right: -1em;
+    top: 0;
+    width: 21em;
+  }
+
+  &__image {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+  }
+}

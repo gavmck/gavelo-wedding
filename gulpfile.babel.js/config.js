@@ -3,10 +3,12 @@ const config = {
     html: 'app/**/*.html',
     sass: 'app/styles/**/*.scss',
     icons: 'app/icons/**/*',
+    images: 'app/images/**/*',
     dist: 'dist/'
   },
   dest: {
-    css: 'dist/styles/'
+    css: 'dist/styles/',
+    images: 'dist/images/',
   },
 };
 
