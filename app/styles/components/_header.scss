@@ -3,11 +3,15 @@
   box-shadow: 0 0 .25em 0 $color-darken;
   color: $color-blue;
   margin: 0 (-$spacing-root);
+  overflow: hidden;
   padding: $spacing-root;
+  position: relative;
 
   &__inner {
     margin: auto;
     max-width: $container-max-width;
+    position: relative;
+    z-index: 1;
   }
 
   &__title {
@@ -20,5 +24,21 @@
   &__heart {
     color: $color-orange;
     font-size: .5em;
+  }
+
+  &__image {
+    bottom: 0;
+    height: 100%;
+    position: absolute;
+    width: auto;
+
+    &--gav {
+      left: 0;
+    }
+
+    &--elo {
+      right: 0;
+      transform: translate(0, 15%);
+    }
   }
 }
