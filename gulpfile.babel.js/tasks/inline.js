@@ -6,7 +6,7 @@ gulp.task('inline', ['sass'], () => {
   return gulp.src(config.paths.html)
   .pipe(inline({
     base: config.paths.dist,
-    ignore: [config.paths.googleFont]
+    disabledTypes: ['img'],
   }))
   .pipe(gulp.dest(config.paths.dist));
 });

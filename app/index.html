@@ -22,7 +22,20 @@
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="/manifest.json">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ee5a30">
+
     <meta name="theme-color" content="#fef7d3">
+
+    <meta property="og:title" content="Gav & Elo are getting HITCHED"/>
+    <meta property="og:image" content="/images/preview-650.png"/>
+    <meta property="og:site_name" content="GavElo's Wedding"/>
+    <meta property="og:description" content="12 years in, it's finally time. Come celebrate with us! 2nd September 2017, Kent"/>
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@gavynmckenzie">
+    <meta name="twitter:title" content="GavElo's Wedding">
+    <meta name="twitter:description" content="12 years in, it's finally time. Come celebrate with us! 2nd September 2017, Kent">
+    <meta name="twitter:image" content="/images/preview-650.png">
+
   </head>
   <body>
     <section class="wrapper" itemscope itemtype="http://schema.org/Event">
@@ -30,29 +43,42 @@
       <meta name="description" content="12 years in, it's finally time. Come celebrate with us! 2nd September 2017, Kent" itemprop="description" />
 
       <header role="masthead" class="header">
-        <!--
-          <div class="polaroid">
-            <img class="polaroid__image" src="/images/gavelo-filtered.jpg" alt="Gav and Elo" />
-          </div>
-        -->
-        <img src="/images/gav-side-happy.jpg" class="header__image header__image--gav" />
+        <img
+          src="/images/gav-kiss-30.jpg"
+          srcset="/images/gav-kiss-30.jpg 30w, /images/gav-kiss-650.jpg 650w"
+          class="header__image header__image--gav header__image--small"
+        />
+        <img
+          src="/images/gav-30.jpg"
+          srcset="/images/gav-30.jpg 30w, /images/gav-650.jpg 650w"
+          class="header__image header__image--gav header__image--large"
+        />
         <div class="header__inner">
           <h1 class="header__title" itemprop="name">
             Gav & Elo are getting hitched <span class="heart header__heart"></span>
           </h1>
         </div>
-        <img src="/images/elo-side-happy.jpg" class="header__image header__image--elo" />
+        <img src="/images/elo-kiss-30.jpg"
+          srcset="/images/elo-kiss-30.jpg 30w, /images/elo-kiss-650.jpg 650w"
+          class="header__image header__image--elo header__image--small"
+        />
+        <img
+          src="/images/elo-30.jpg"
+          srcset="/images/elo-30.jpg 30w, /images/elo-650.jpg 650w"
+          class="header__image header__image--elo header__image--large"
+        />
+        <span class="heart header__kiss"></span>
       </header>
 
       <main role="main" class="main">
         <section class="mailing-list">
-          <h2 class="mailing-list__title">Stay in the loop</h2>
+          <h2 class="mailing-list__title">Tell us you're coming</h2>
 
           <form action="//wedding.us14.list-manage.com/subscribe/post?u=92a3d372e3589c053904d922b&amp;id=ba09a53b27" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
 
             <div class="mailing-list__row">
-              <label for="mce-NAME" class="mailing-list__label">Name</label>
-              <input type="text" value="" name="NAME" class="mailing-list__field" id="mce-NAME" placeholder="Name" required />
+              <label for="mce-NAME" class="mailing-list__label">Name(s)</label>
+              <input type="text" value="" name="NAME" class="mailing-list__field" id="mce-NAME" placeholder="Name(s)" required />
             </div>
 
             <div class="mailing-list__row">
@@ -95,8 +121,6 @@
       </footer>
 
     </section>
-
-    <script src="/scripts/main.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
     <script>
