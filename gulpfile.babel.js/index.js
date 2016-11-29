@@ -8,4 +8,4 @@ import './tasks/images';
 
 gulp.task('default', ['inline', 'icons', 'images', 'serve', 'watch']);
 
-gulp.task('build', ['inline', 'icons']);
+gulp.task('build', ['inline', 'icons', 'images']);
