@@ -5,7 +5,8 @@ import './tasks/serve';
 import './tasks/watch';
 import './tasks/icons';
 import './tasks/images';
+import './tasks/scripts';
 
-gulp.task('default', ['inline', 'icons', 'images', 'serve', 'watch']);
+gulp.task('default', ['scripts', 'inline', 'icons', 'images', 'serve', 'watch']);
 
-gulp.task('build', ['inline', 'icons', 'images']);
+gulp.task('build', ['scripts', 'inline', 'icons', 'images']);
