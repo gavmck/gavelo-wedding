@@ -9,6 +9,14 @@
 
   &__row {
     margin-bottom: $spacing;
+
+    &--radio {
+      text-align: right;
+
+      .mailing-list__label {
+        display: inline-block;
+      }
+    }
   }
 
   &__label {

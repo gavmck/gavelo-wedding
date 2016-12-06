@@ -1,7 +1,16 @@
-//! UpUp
-//! version : 0.3.0
-//! author  : Tal Ater @TalAter
-//! license : MIT
-//! https://github.com/TalAter/UpUp
-(function(a){"use strict";var b=this,c=navigator.serviceWorker;if(!c)return b.UpUp=null,a;var d={"service-worker-url":"upup.sw.min.js"},e=!1,f="font-weight: bold; color: #00f;";b.UpUp={start:function(a){this.addSettings(a),c.register(d["service-worker-url"],{scope:"./"}).then(function(a){e&&console.log("Service worker registration successful with scope: %c"+a.scope,f);var b=a.installing||c.controller;b.postMessage({action:"set-settings",settings:d})}).catch(function(a){e&&console.log("Service worker registration failed: %c"+a,f)})},addSettings:function(b){b=b||{},"string"==typeof b&&(b={content:b}),["content","content-url","assets","service-worker-url","cache-version"].forEach(function(c){b[c]!==a&&(d[c]=b[c])})},debug:function(a){e=!(arguments.length>0)||!!a}}}).call(this);
-//# sourceMappingURL=upup.min.js.map
+// Handle form switcheroo
+var radios = Array.prototype.slice.call(document.querySelectorAll('[name=coming]'));
+
+radios.forEach(function(radio) {
+  radio.addEventListener('change', function() {
+    if (document.getElementById('coming').checked) {
+      document.querySelector('.mailing-list').classList.remove('mailing-list--not-coming');
+      document.querySelector('.mailing-list__form').setAttribute('action', '//wedding.us14.list-manage.com/subscribe/post?u=92a3d372e3589c053904d922b&amp;id=ba09a53b27');
+    } else {
+      document.querySelector('.mailing-list').classList.add('mailing-list--not-coming');
+      document.querySelector('.mailing-list__form').setAttribute('action', 'https://formspree.io/gavyn.mckenzie@gmail.com');
+    }
+  });
+});
+
+

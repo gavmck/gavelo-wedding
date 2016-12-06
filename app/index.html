@@ -76,7 +76,7 @@
         <section class="mailing-list">
           <h2 class="mailing-list__title">Tell us you're coming</h2>
 
-          <form action="//wedding.us14.list-manage.com/subscribe/post?u=92a3d372e3589c053904d922b&amp;id=ba09a53b27" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+          <form action="//wedding.us14.list-manage.com/subscribe/post?u=92a3d372e3589c053904d922b&amp;id=ba09a53b27" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate mailing-list__form" target="_blank">
 
             <div class="mailing-list__row">
               <label for="mce-NAME" class="mailing-list__label">Name(s)</label>
@@ -88,9 +88,20 @@
               <input type="email" value="" name="EMAIL" class="mailing-list__field" id="mce-EMAIL" placeholder="username@domain.com" required />
             </div>
 
+            <div class="mailing-list__row mailing-list__row--radio">
+              <label for="coming" class="mailing-list__label">Count me in</label>
+              <input type="radio" id="coming" name="coming" value="1" checked />
+            </div>
+
+            <div class="mailing-list__row mailing-list__row--radio">
+              <label for="not-coming" class="mailing-list__label">Sorry, can't make it</label>
+              <input type="radio" id="not-coming" name="coming" value="0" />
+            </div>
+
             <!-- Honeypot -->
             <div style="position: absolute; left: -5000px;" aria-hidden="true">
               <input type="text" name="b_92a3d372e3589c053904d922b_ba09a53b27" tabindex="-1" value="">
+              <input type="text" name="_gotcha" />
             </div>
 
             <button type="submit" class="btn mailing-list__btn">Sign up</button>
@@ -124,11 +135,12 @@
 
     </section>
 
+    <script src="/upup.min.js"></script>
     <script src="/main.js"></script>
-      <script>
+    <script>
       UpUp.start({
-        'cache-version': 'v2',
-        'content': 'index.html',
+        'cache-version': 'v3',
+        'content-url': 'index.html',
         'assets': [
           '/styles/main.css',
           '/apple-touch-icon.png',
