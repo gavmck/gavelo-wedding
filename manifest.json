@@ -1,5 +1,7 @@
 {
-	"name": "GavElo",
+	"name": "GavElo's Wedding",
+  "short_name": "GavElo",
+  "start_url": "https://gavelo.wedding",
 	"icons": [
 		{
 			"src": "\/android-chrome-192x192.png",
