@@ -3,5 +3,26 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+
+    strong {
+      display: inline-block;
+      width: 3em;
+    }
+  }
+
+  &__lineup {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media screen and (min-width: 45em) {
+    &__inner {
+      display: flex;
+
+      > div {
+        flex: 1 0 auto;
+      }
+    }
   }
 }
