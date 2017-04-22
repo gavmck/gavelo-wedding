@@ -1,6 +1,7 @@
 .nav {
   background: $color-orange;
   box-shadow: 0 .25em .25em 0 $color-darken;
+  display: none;
   margin: 0 (-$spacing-root);
 
   &__list {
@@ -32,6 +33,7 @@
   }
 
   @media screen and (min-width: 35em) {
+    display: block;
     position: sticky;
     top: 0;
 

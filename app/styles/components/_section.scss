@@ -49,5 +49,10 @@
 
   &--center {
     text-align: center;
+
+    p {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
