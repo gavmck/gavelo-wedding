@@ -1,5 +1,5 @@
 .btn {
-  background: $color-blue;
+  background: $color-orange;
   border: 0;
   border-radius: $border-radius;
   color: $color-white;
@@ -11,18 +11,18 @@
   transition: background $transition-duration $transition-easing;
 
   &:hover {
-    background: darken($color-blue, 5%);
+    background: darken($color-orange, 5%);
     transform: scale(1.025);
   }
 
   &:focus {
+    background: darken($color-orange, 5%);
     outline: none;
-    background: darken($color-blue, 5%);
     transform: scale(1.025);
   }
 
   &:active {
-    background: darken($color-blue, 10%);
+    background: darken($color-orange, 10%);
     transform: scale(.95);
   }
 }

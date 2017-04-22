@@ -78,10 +78,10 @@
       <nav role="navigation" class="nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#rsvp" class="nav__link">RSVP</a>
+            <a href="#date" class="nav__link">When</a>
           </li>
           <li class="nav__item">
-            <a href="#venue" class="nav__link">Venue</a>
+            <a href="#venue" class="nav__link">Where</a>
           </li>
           <li class="nav__item">
             <a href="#schedule" class="nav__link">Schedule</a>
@@ -95,11 +95,149 @@
           <li class="nav__item">
             <a href="#gifts" class="nav__link">Gifts</a>
           </li>
+          <li class="nav__item">
+            <a href="#rsvp" class="nav__link">RSVP</a>
+          </li>
         </ul>
       </nav>
 
       <main role="main" class="main">
-        <section class="section section--white" id="rsvp">
+
+        <section class="section section--white" id="date">
+          <div class="section__inner">
+            <h2 class="section__title">When</h2>
+            <p class="lead" itemprop="startDate" content="2017-09-02T16:00">Saturday 2nd September 2017</p>
+            <meta name="endDate" content="2017-09-03T00:00" itemprop="endDate" />
+          </div>
+        </section>
+
+        <section class="section section--blue" id="venue">
+          <div class="section__inner">
+            <h2 class="section__title">Where</h2>
+
+            <div class="location" itemprop="location" itemscope itemtype="http://schema.org/Place">
+              <meta name="name" content="Kingston Village Barn" itemprop="name" />
+
+              <p class="lead">
+                We will be celebrating at Kingston Village Barn, on the outskirts of Canterbury (about 15 minutes by car from Canterbury centre).
+              </p>
+
+              <div class="location__inner">
+                <div class="location__details">
+
+                  <h3>
+                    Directions
+                  </h3>
+                  <p>
+                    By car from Canterbury/London: from the A2 take the exit towards Kingston/Barham/Bash 'bourne.  After about 4 miles on Bonny Bush Hill, turn right onto The Street.  The Barn is located on the left-hand side.
+                  </p>
+
+                  <h3>Transport and Taxis</h3>
+                  <p>
+                    There is parking available at the Barn for those who wish to drive.  There are a number of taxi companies in Canterbury
+                  </p>
+                </div>
+
+                <div class="location__address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                  <h3>Address</h3>
+                  <p>
+                    <a class="location__link" href="https://goo.gl/maps/vHY55NEzbHJ2" target="_blank" rel="noopener">
+                      <span itemprop="streetAddress">Kingston Village Barn<br /> 25 The Street<br /> Kingston</span>
+                      <span itemprop="addressLocality">Canterbury</span>
+                      <span itemprop="postalCode">CT4 6JB</span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section--orange" id="schedule">
+          <div class="section__inner">
+            <h2 class="section__title">Schedule</h2>
+            <p class="lead">
+              If you would like to sing a song, say some words or spin some records, let us know!
+            </p>
+            <p>
+              <a href="mailto:brideandgroom@gavelo.wedding">brideandgroom@gavelo.wedding</a>
+            </p>
+
+            <div class="schedule__inner">
+              <ol class="schedule__list">
+                <li class="schedule__item"><strong>4pm</strong> Arrival - drinks, snacks and relax</li>
+                <li class="schedule__item"><strong>5pm</strong> Entertainment - a sing and a say</li>
+                <li class="schedule__item"><strong>6pm</strong> Food - bring on the buffet</li>
+                <li class="schedule__item"><strong>7pm</strong> DJs and dancing - let’s party!</li>
+                <li class="schedule__item"><strong>11pm</strong> Last orders - anything left at the bar?</li>
+                <li class="schedule__item"><strong>12am</strong> Game Over - bed time for bozos.</li>
+              </ol>
+
+              <div class="schedule__requests">
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section--yellow" id="accommodation">
+          <div class="section__inner">
+            <h2 class="section__title">Accommodation</h2>
+
+            <p class="lead">
+              We suggest looking at the options Canterbury.  There isn’t much in Kingston as it’s a tiny village!
+            </p>
+            <p>
+              We have negotiated a 10% discount at the <a href="http://www.thefalstaffincanterbury.com/" target="_blank" rel="noopener">Falstaff Hotel</a> in Canterbury which we think is very nice and is where we will be staying.
+            </p>
+            <p>
+              To book please contact the hotel directly. They are holding a limited number of rooms for us and will require payment upon booking.
+            </p>
+            <p>
+              For the Saturday night, rates are:
+            </p>
+            <ul>
+              <li>Double/Twin including breakfast: £116.10</li>
+              <li>Queen including breakfast: £94.50</li>
+            </ul>
+
+            <p>If you need further advice please ask us.</p>
+          </div>
+        </section>
+
+        <section class="section section--red" id="dress">
+          <div class="section__inner">
+            <h2 class="section__title">Dress code</h2>
+
+            <p class="lead">
+              Casual wedding wear
+            </p>
+            <p>
+              Please wear whatever you feel comfortable in*
+            </p>
+            <p><small>*No stilettos</small></p>
+          </div>
+        </section>
+
+        <section class="section section--white" id="gifts">
+          <div class="section__inner">
+            <h2 class="section__title">Gifts</h2>
+
+            <p class="lead">
+              Please do not feel like you should or need to give us a gift.
+            </p>
+
+            <p>
+              We really appreciate the time and money you are already spending in coming to celebrate with us! Thank you :)
+            </p>
+
+            <p>
+              For those who would like to make an additional contribution there will be a card and donations box at the Barn.
+            </p>
+          </div>
+        </section>
+
+        <section class="section section--blue section--center" id="rsvp">
           <div class="section__inner">
             <h2 class="section__title">RSVP</h2>
 
@@ -136,116 +274,6 @@
               </form>
             </div>
           </div>
-        </section>
-
-        <section class="section section--blue" id="venue">
-          <div class="section__inner">
-            <h2 class="section__title">Venue</h2>
-
-            <p>
-              We will be celebrating at Kingston Village Barn, on the outskirts of Canterbury (about 15 minutes by car from Canterbury centre).
-            </p>
-            <p>
-              The address is: Kingston Barn, The St, Kingston, Canterbury CT4 6JB.
-            </p>
-            <p>
-              Please arrive from 4pm.  Drinks and food will be provided!  Please see the schedule for further details.
-            </p>
-
-            <h3>
-              Directions
-            </h3>
-            <p>
-              By car from Canterbury/London: from the A2 take the exit towards Kingston/Barham/Bash 'bourne.  After about 4 miles on Bonny Bush Hill, turn right onto The Street.  The Barn is located on the left-hand side.
-            </p>
-            <p>
-              [Map]
-              There is parking available.
-            </p>
-
-            <h3>Transport and Taxis</h3>
-            <p>
-              There is parking available at the Barn for those who wish to drive.  There are a number of taxi companies in Canterbury
-            </p>
-          </div>
-        </section>
-
-        <section class="section section--orange" id="schedule">
-          <div class="section__inner">
-            <h2 class="section__title">Schedule</h2>
-
-            <ol>
-              <li>4pm: Arrival - drinks, snacks and relax</li>
-              <li>5pm: Entertainment - a sing and a say</li>
-              <li>6pm: Food - bring on the buffet</li>
-              <li>7pm: DJs and dancing - let’s party!</li>
-              <li>11pm: Last orders - anything left at the bar?</li>
-              <li>12am: Game Over - bed time for bozos.</li>
-            </ol>
-
-            <p>
-              If you would like to sing a song, say some words or spin some records, let us know!
-            </p>
-          </div>
-        </section>
-
-        <section class="section section--yellow" id="accommodation">
-          <div class="section__inner">
-            <h2 class="section__title">Accommodation</h2>
-
-            <p>
-              If you need a place to stay, we would suggest looking at the options Canterbury (which is approx. 15 minutes from Kingston Barn).  There isn’t much in Kingston as it’s a tiny village!
-            </p>
-            <p>
-              We have negotiated a 10% discount at the Falstaff Hotel in Canterbury which we think is very nice and is where we will be staying.  To book please contact the hotel directly.  They are holding a limited number of rooms for us and will require payment upon booking.
-              For the Saturday night, rates are:
-              -Double/Twin including breakfast: 116.10.
-              -Queen including breakfast: 94.50.
-            </p>
-
-            <p>If you need further advice please ask us.</p>
-          </div>
-        </section>
-
-        <section class="section section--red" id="dress">
-          <div class="section__inner">
-            <h2 class="section__title">Dress code</h2>
-
-            <p>
-              Casual wedding wear...please wear whatever you feel comfortable in :)
-            </p>
-            <p><small>But no stilettos</small></p>
-          </div>
-        </section>
-
-        <section class="section" id="gifts">
-          <div class="section__inner">
-            <h2 class="section__title">Gifts</h2>
-
-            <p>
-              Please do not feel like you should or need to give us a gift.  We really appreciate the time and money you are already spending in coming to celebrate with us! Thank you :)
-              For those who would like to make an additional contribution there will be a card and donations box at the Barn.
-            </p>
-          </div>
-        </section>
-
-        <section class="date">
-          <h2 class="date__title">When</h2>
-          <p itemprop="startDate" content="2017-09-02T16:00">Saturday 2nd September 2017</p>
-          <meta name="endDate" content="2017-09-03T00:00" itemprop="endDate" />
-        </section>
-
-        <section class="location" itemprop="location" itemscope itemtype="http://schema.org/Place">
-          <meta name="name" content="Kingston Village Barn" itemprop="name" />
-
-          <h2 class="location__title">Where</h2>
-          <p class="location__address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-            <a class="location__link" href="https://goo.gl/maps/vHY55NEzbHJ2" target="_blank" rel="noopener">
-              <span itemprop="streetAddress">Kingston Village Barn,<br /> 25 The Street,<br /> Kingston</span>
-              <span itemprop="addressLocality">Canterbury</span>
-              <span itemprop="postalCode">CT4 6JB</span>
-            </a>
-          </p>
         </section>
 
       </main>

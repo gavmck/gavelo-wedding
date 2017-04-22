@@ -1,6 +1,9 @@
 .location {
-  margin: auto;
-  max-width: $container-max-width;
+  text-align: left;
+
+  &__details {
+
+  }
 
   &__link {
     color: inherit;
@@ -11,14 +14,17 @@
   &__address {
     span {
       display: block;
+    }
+  }
 
-      &::after {
-        content: ',';
-      }
+  @media screen and (min-width: 45em) {
+    &__inner {
+      display: flex;
+    }
 
-      &:last-child::after {
-        content: '';
-      }
+    &__details,
+    &__address {
+      flex: 1 0 auto;
     }
   }
 }

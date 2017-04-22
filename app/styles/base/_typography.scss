@@ -46,6 +46,7 @@ h3 {
 
 p {
   margin: 0 0 $spacing;
+  max-width: 30em;
 }
 
 label {
@@ -76,4 +77,8 @@ label {
   p {
     opacity: 1;
   }
+}
+
+.lead {
+  font-size: 1.25em;
 }

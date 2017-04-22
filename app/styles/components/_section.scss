@@ -1,16 +1,17 @@
 .section {
   margin: 0 (-$spacing-root);
   padding: $spacing-root;
-  text-align: center;
+  // text-align: center;
 
   h2,
-  h3 {
+  h3,
+  a {
     color: inherit;
   }
 
   &__inner {
     margin: auto;
-    max-width: 30em;
+    max-width: 60em;
   }
 
   &__title {
@@ -44,5 +45,9 @@
     h3 {
       color: $color-orange;
     }
+  }
+
+  &--center {
+    text-align: center;
   }
 }

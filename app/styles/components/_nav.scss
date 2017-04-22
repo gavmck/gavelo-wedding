@@ -21,7 +21,8 @@
     transition: background $transition-duration $transition-easing;
 
     &:hover,
-    &:focus {
+    &:focus,
+    &--active {
       background: $color-darken;
     }
 
