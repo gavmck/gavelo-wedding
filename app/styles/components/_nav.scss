@@ -1,0 +1,52 @@
+.nav {
+  background: $color-orange;
+  box-shadow: 0 .25em .25em 0 $color-darken;
+  margin: 0 (-$spacing-root);
+
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+
+  }
+
+  &__link {
+    color: $color-yellow-light;
+    display: block;
+    padding: $spacing-sm $spacing-root;
+    text-decoration: none;
+    transition: background $transition-duration $transition-easing;
+
+    &:hover,
+    &:focus {
+      background: $color-darken;
+    }
+
+    &:active {
+      background: $color-darken-more;
+    }
+  }
+
+  @media screen and (min-width: 35em) {
+    position: sticky;
+    top: 0;
+
+    &__list {
+      display: flex;
+      margin: auto;
+      max-width: 60em;
+    }
+
+    &__item {
+      flex: 1 0 auto;
+    }
+
+    &__link {
+      padding: $spacing-sm;
+      text-align: center;
+    }
+  }
+}

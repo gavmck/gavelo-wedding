@@ -3,14 +3,18 @@ $color-blue: #14558d;
 $color-orange: #ee5a30;
 $color-yellow-light: #fef7d3;
 
-$color-red: #ff6666;
+$color-red: #f66;
 $color-grey-darkest: #333;
 $color-grey-dark: #666;
 $color-grey: #ccc;
 
 $color-white: #fff;
 
-$color-darken: rgba(0, 0, 0, 0.25);
+$color-darken: rgba(0, 0, 0, .05);
+$color-darken-more: rgba(0, 0, 0, .1);
+
+$color-lighten: rgba(255, 255, 255, .5);
+$color-lighten-more: rgba(255, 255, 255, .75);
 
 // Fonts
 

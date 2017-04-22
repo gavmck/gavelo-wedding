@@ -25,7 +25,7 @@ h5,
 h6 {
   color: $heading-color;
   font-family: $font-family-heading;
-  font-weight: 900;
+  font-weight: 400;
   line-height: 1.2;
   margin: $spacing-lg 0 $spacing-sm;
 }
@@ -37,6 +37,11 @@ h1 {
 
 h2 {
   color: $color-orange;
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2rem;
 }
 
 p {
